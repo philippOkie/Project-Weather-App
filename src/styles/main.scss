@@ -1,1 +1,49 @@
 @import url(./reset.scss);
+
+$clr: #d5cea3;
+$bkgrnd-clr: #d5cea3;
+$drk-clr: #1a120b;
+
+body {
+  background-color: $bkgrnd-clr;
+  color: #e5e5cb;
+}
+
+.general-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  .wrapper-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
+    span {
+      color: $drk-clr;
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    .findCity {
+      background-color: $drk-clr;
+      color: $clr;
+      font-size: 2em;
+      border-radius: 12px;
+      width: 100%;
+      height: auto;
+      margin-right: 1em;
+      margin-bottom: 50%;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +6,25 @@
     <title>WhaWeatherNow</title>
   </head>
   <body>
-    <div class="general-container"></div>
+    <div class="general-container">
+      <div class="wrapper-info">
+        <span id="city">City</span>
+        <span id="country">country</span>
+        <span id="condition">cond</span>
+        <span id="temp">temp</span>
+        <span id="feelsLike">feels</span>
+        <span id="humidity">humidity</span>
+        <span id="wind">wind</span>
+      </div>
+      <form class="footer" id="form">
+        <input
+          type="text"
+          class="findCity"
+          id="findCity"
+          placeholder="Input the city"
+        />
+        <button class="findCity" id="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>

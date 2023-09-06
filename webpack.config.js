@@ -25,8 +25,12 @@ module.exports = {
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
-        test: /.\html$/,
+        test: /\.html$/,
         use: ["html-loader"],
+      },
+      {
+        test: /\.(png|jpg|jpeg|svg)/,
+        type: "asset/resource",
       },
     ],
   },
